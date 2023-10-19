@@ -4,6 +4,7 @@
 @section('main-content')
     <div class="container">
         <a href="{{ route('comics.index') }}" class="btn btn-primary">Torna alla lista Fumetti</a>
+        <a href="{{ route('comics.edit', $comic) }}" class="btn btn-warning">Modifica Fumetto</a>
         <h1 class="mb-3">Dettaglio Fumetto</h1>
         <div class="row justify-content-center mb-5">
             <div class="col-6">

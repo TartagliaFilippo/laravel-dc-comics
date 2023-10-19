@@ -20,7 +20,7 @@
                     <th scope="col">Tipo</th>
                     <th scope="col">Data di creazione</th>
                     <th scope="col">Ultima modifica</th>
-                    <th scope="col">Guarda Dettagli</th>
+                    <th scope="col">Dettagli-Modifica-Elimina</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,7 +33,9 @@
                         <td scope="col">{{ $comic['type'] }}</td>
                         <td scope="col">{{ $comic['created_at'] }}</td>
                         <td scope="col">{{ $comic['updated_at'] }}</td>
-                        <td><a href="{{ route('comics.show', $comic) }}"><i class="fa-solid fa-eye"></i></a></td>
+                        <td><a href="{{ route('comics.show', $comic) }}"><i class="fa-solid fa-eye"></i></a>
+                            <a href="{{ route('comics.edit', $comic) }}"><i class="fa-solid fa-pen-to-square"></i></a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

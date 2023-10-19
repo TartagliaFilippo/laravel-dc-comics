@@ -35,6 +35,11 @@
                         <td scope="col">{{ $comic['updated_at'] }}</td>
                         <td><a href="{{ route('comics.show', $comic) }}"><i class="fa-solid fa-eye"></i></a>
                             <a href="{{ route('comics.edit', $comic) }}"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+                                @method('DELETE')
+                                @csrf
+                                <button class="text-danger"><i class="fa-solid fa-trash"></i></button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach

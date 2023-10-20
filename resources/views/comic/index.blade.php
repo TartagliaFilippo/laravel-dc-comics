@@ -41,7 +41,7 @@
                                 <i class="fa-solid fa-trash text-danger"></i>
                             </a>
 
-
+                            {{-- MODALE DELATE --}}
                             <div class="modal fade" id="delete-modal-{{ $comic['id'] }}" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">

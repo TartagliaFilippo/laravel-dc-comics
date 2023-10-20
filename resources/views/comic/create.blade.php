@@ -2,9 +2,9 @@
 
 @section('main-content')
     <div class="container">
-        <a href="{{ route('comics.index') }}" class="btn btn-primary">Torna alla lista Fumetti</a>
+        <a href="{{ route('comics.index') }}" class="btn btn-primary mt-3">Torna alla lista Fumetti</a>
         <h1>Crea un Fumetto</h1>
-        <form method="POST" action="{{ route('comics.store') }}" class="row g-3">
+        <form method="POST" action="{{ route('comics.store') }}" class="row g-3 mb-5">
 
             @csrf
             <label for="title">Titolo</label>
